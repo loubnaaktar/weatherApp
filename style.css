@@ -69,3 +69,57 @@ width: 100px;
 height: 50px;
 margin-top: 5px;
 }
+
+main{
+height: 350px;
+background-color: rgba(255, 255, 255, 0.7);
+margin-top: 30px;
+margin: 40px;
+padding: 30px;
+border-radius: 40px;
+display: grid;
+
+}
+
+.part1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.part1 img{
+  width: 40px;
+  margin-left: 35%;
+}
+.part1 h3{
+  margin-top: 40px;
+  margin-left: 130px;
+  font-size: 35px;
+  color:rgba(129, 129, 129, 1);
+
+}
+.part1 .temperature{
+  margin-top: 30px;
+  font-size: 80px;
+  margin-left: 150px;
+  color:rgba(91, 91, 91, 1);
+   font-weight: bold;
+
+}
+
+.part2{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: rgba(252, 252, 252, 0.7);
+  border-radius: 50px;
+ padding: 30px;
+}
+
+.part2 .etat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.part2 .humidite{
+  display: flex;
+  flex-direction: row;
+  padding: 90px;
+}
