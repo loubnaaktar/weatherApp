@@ -68,13 +68,14 @@ box-shadow: none;
 width: 100px;
 height: 50px;
 margin-top: 5px;
+cursor: pointer;
 }
 
 main{
 height: 350px;
 background-color: rgba(255, 255, 255, 0.7);
 margin-top: 30px;
-margin: 40px;
+margin: 30px;
 padding: 30px;
 border-radius: 40px;
 display: grid;
@@ -91,7 +92,7 @@ display: grid;
 }
 .part1 h3{
   margin-top: 40px;
-  margin-left: 130px;
+  margin-left: 100px;
   font-size: 35px;
   color:rgba(129, 129, 129, 1);
 
@@ -99,27 +100,99 @@ display: grid;
 .part1 .temperature{
   margin-top: 30px;
   font-size: 80px;
-  margin-left: 150px;
+  margin-left: 100px;
   color:rgba(91, 91, 91, 1);
    font-weight: bold;
 
 }
 
 .part2{
+  display: grid;
   grid-column-start: 2;
   grid-column-end: 4;
   background-color: rgba(252, 252, 252, 0.7);
   border-radius: 50px;
  padding: 30px;
+ height: 300px;
+
 }
 
 .part2 .etat{
   display: flex;
   flex-direction: row;
+  font-size: 32px;
+  color: rgba(87, 87, 88, 1);
   justify-content: space-around;
+}
+
+.etat img{
+  width: 300px;
+  height: auto;
+  position: relative;
+  left:100px;
+  bottom:100px;
 }
 .part2 .humidite{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   padding: 90px;
+  position: relative;
+  bottom: 200px;
+  justify-content: space-between;
+}
+
+.humi{
+  position:relative;
+  bottom: 20px;
+  left: 20px;
+}
+.humi img{
+width: 80px;
+height: auto;
+}
+.humidite h3{
+   font-size: 40px;
+   color: rgba(104, 103, 103, 1);
+  
+}
+
+.humi h5{
+  text-align: center;
+  color: rgb(164, 164, 164);
+}
+
+
+
+
+
+@media (max-width: 900px) {
+  body{
+      background-size: 2000px;
+    
+  }
+  
+  .search{
+    width: 400px;
+    height: auto;
+    background: none;
+
+  }
+
+  main{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .part1{
+     transform: scale(0.8);
+     width: 80px;
+     height: auto;
+  }
+  .part2{
+    transform: scale(0.8);
+    width: 500px;
+    margin: 40px -70px;
+  }
+  
 }
