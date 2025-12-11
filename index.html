@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>weather</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="fonts.googleapis.com" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="fonts.googleapis.com" rel="stylesheet"> -->
 </head>
+
 <body>
- <script src="script.js"></script>
     <nav>
-    <div class="titre">
-        <span>Weather Forecast
-            <br>
-            <br>Get current weather and forecasts</span>
-</div>
-<div class="modebtn"></div>
-</nav>
+        <div class="titre">
+            <span>Weather Forecast
+                <br>
+                <br>Get current weather and forecasts</span>
+            </div>
+            <div class="modebtn"></div>
+    </nav>
+    
+    
+    <div class="search">
+        
+        <input class="text" type="text" placeholder="search for a city...">
 
-
- <div class="search">
-
-    <input type="text" placeholder="search for a city..." >
- 
-    <button class="btn">Search</button>
-</div> 
-
-
-
-
-
-
-<main>
-    <div class="part1">
-    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMTIgMmE4IDggMCAwIDEgOCA4YzAgNi41LTggMTItOCAxMnMtOC01LjUtOC0xMmE4IDggMCAwIDEgOC04bTAgNWEzIDMgMCAxIDAgMCA2YTMgMyAwIDAgMCAwLTYiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMCAxMGMwIDYuNS04IDEyLTggMTJzLTgtNS41LTgtMTJhOCA4IDAgMSAxIDE2IDBaIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTE1IDEwYTMgMyAwIDEgMS02IDBhMyAzIDAgMCAxIDYgMFoiLz48L2c+PC9zdmc+" alt="localisation logo">
-    <h3>NEW YORK</h3>
-    <div class="temperature">31°C</div>
+        <button class="btn" >Search</button>
     </div>
 
-<div class="part2">
-<div class="etat">
-<h3>Sunny</h3>
-<img src="images/animated/day.svg" alt="etat image">
-</div>
-
-<div class="humidite">
-
-<div class="humi">
-    <img src="images/waterLogo.svg" alt="waterLogo">
-<h5>humidity</h5>
-</div>
-
-<h3>20%</h3>
-</div>
-
-</div> 
-
-</main>
-
+    
+    
+    
+    
+    
+    <main>
+        <div class="part1">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMTIgMmE4IDggMCAwIDEgOCA4YzAgNi41LTggMTItOCAxMnMtOC01LjUtOC0xMmE4IDggMCAwIDEgOC04bTAgNWEzIDMgMCAxIDAgMCA2YTMgMyAwIDAgMCAwLTYiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0yMCAxMGMwIDYuNS04IDEyLTggMTJzLTgtNS41LTgtMTJhOCA4IDAgMSAxIDE2IDBaIi8+PHBhdGggc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTE1IDEwYTMgMyAwIDEgMS02IDBhMyAzIDAgMCAxIDYgMFoiLz48L2c+PC9zdmc+"
+            alt="localisation logo">
+            <h3 class="cities"></h3>
+            <div class="temperature">°C</div>
+        </div>
+        
+        <div class="part2">
+            <div class="etat">
+                <h3 class="descriptionMeteo">...........</h3>
+                <img class="meteoIcon" src="images/animated/weather.svg " alt="etat image">
+            </div>
+            
+            <div class="humidite">
+                
+                <div class="humi">
+                    <img src="images/waterLogo.svg" alt="waterLogo">
+                    <h5>humidity</h5>
+                </div>
+                
+                <h3 class="pourcentageHumi">%</h3>
+            </div>
+            
+        </div>
+        
+    </main>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>

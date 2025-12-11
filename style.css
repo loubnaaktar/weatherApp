@@ -126,18 +126,18 @@ display: grid;
 }
 
 .etat img{
-  width: 300px;
+  width: 200px;
   height: auto;
   position: relative;
   left:100px;
-  bottom:100px;
+  bottom:50px;
 }
 .part2 .humidite{
   display: flex;
   flex-direction: row-reverse;
   padding: 90px;
   position: relative;
-  bottom: 200px;
+  bottom: 100px;
   justify-content: space-between;
 }
 
@@ -188,6 +188,7 @@ height: auto;
      transform: scale(0.8);
      width: 80px;
      height: auto;
+     margin-top: 100px;
   }
   .part2{
     transform: scale(0.8);
@@ -196,3 +197,9 @@ height: auto;
   }
   
 }
+
+
+
+
+
+
